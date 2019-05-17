@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Moldy Buns</title>
+
+    <style type="text/css">
+      body {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: #04384a;
+      }
+      button {
+        border: none;
+        border-radius: 0.25rem;
+        padding: 1rem 2rem;
+        margin: 1rem;
+        text-decoration: none;
+        background: #0b90aa;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-size: 1.3rem;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+
+      button:hover,
+      button:focus {
+        background: #b1b336;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="hey" src="./audio/hey.mp3"></audio>
+    <audio id="whereyouat" src="./audio/whereyouat.mp3"></audio>
+    <audio id="thesebuns" src="./audio/thesebuns.mp3"></audio>
+
+    <button onclick="document.getElementById('hey').play()">
+      Hey
+    </button>
+    <button onclick="document.getElementById('whereyouat').play()">
+      Where You At?
+    </button>
+    <button onclick="document.getElementById('thesebuns').play()">
+      These Buns Are Moldy
+    </button>
+  </body>
+</html>
